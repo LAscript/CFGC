@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080817">
   <meta name="description" content="CFGC — Caring For Gaming Community. A gaming community built to bring gamers together. Coming soon.">
+  <link rel="icon" type="image/png" href="https://i.imgur.com/Kud1llK.png">
+  <link rel="apple-touch-icon" href="https://i.imgur.com/Kud1llK.png">
   <title>CFGC — Coming Soon</title>
 
   <style>
@@ -83,11 +85,18 @@
     }
 
     .brand {
-      font: 800 18px/1 Orbitron, sans-serif;
-      letter-spacing: .08em;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
     }
 
-    .brand span { color: var(--pink); }
+    .brand img {
+      width: 88px;
+      height: 46px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 0 12px rgba(220, 60, 255, .22));
+    }
 
     .status {
       display: flex;
@@ -416,11 +425,11 @@
 
 <body>
   <nav class="nav">
-    <div class="brand">CF<span>G</span>C</div>
+    <a class="brand" href="#top" aria-label="CFGC Home"><img src="https://i.imgur.com/Kud1llK.png" alt="CFGC Logo"></a>
     <div class="status"><span class="dot"></span> Website launching soon</div>
   </nav>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="hero-grid">
         <div>
